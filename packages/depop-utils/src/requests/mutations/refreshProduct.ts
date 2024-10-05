@@ -24,7 +24,7 @@ export const refresh = async (data: RefreshData) => {
     };
 
     return axios.put(
-      `${DEPOP_API_ENDPOINT}/v2/products/${data.slug}`,
+      `${DEPOP_API_ENDPOINT}/v2/products/${data.slug}/`,
       refreshData,
       {
         headers: {

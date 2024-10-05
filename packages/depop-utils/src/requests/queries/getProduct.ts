@@ -8,7 +8,7 @@ type ProductResponse = {
 
 export const getProduct = (slug: string, accessToken: string) => {
   try {
-    return axios.get(`${DEPOP_API_ENDPOINT}/v2/products/${slug}`, {
+    return axios.get(`${DEPOP_API_ENDPOINT}/v2/products/${slug}/`, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
